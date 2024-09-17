@@ -1,0 +1,154 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    height: auto;
+    width: auto;
+    overflow-x: none;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    
+    ;
+}
+
+.navcontainer{
+    width: 100vw;
+    /* background-color: rgba(113, 113, 154, 0.776); */
+    min-height: 60px;
+    background-color: #0d252d;
+    background-image: linear-gradient(160deg, #0d252d 0%, #80D0C7 100%);
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+nav{
+    width: 100vw;
+    padding-left: 1rem;
+}
+
+#navlist{
+    width: 100vw;
+    padding: 20px;
+    /* margin-right: 15px;
+    margin-left: 15px; */
+    list-style: none;
+    font: 2.8rem;
+    display: flex;
+    justify-content: space-around;
+
+    align-items: center;
+}
+
+#navlogo{
+    font-size: 3rem;
+    font-style: italic;
+    color:white
+}
+
+#navlink{
+    font-size: 1.3rem;
+    display: flex;
+    gap: 20px;
+    color: aliceblue;
+}
+
+a{
+    text-decoration: none;
+    color: antiquewhite;
+    font-family:Arial, Helvetica, sans-serif;
+    
+}
+
+.footerbox{
+    background-color: #0d252d;
+    background-image: linear-gradient(160deg, #0d252d 0%, #80D0C7 100%);
+    
+
+    width: 100%;
+    text-align: center;
+    min-height: 40px;
+}
+
+.footerbox p{
+    color:aliceblue;
+    font-size: 2rem;
+}
+
+.contentbox{
+    width: 70%;
+    margin: auto;
+    border: 1px solid black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 40px;
+    box-shadow: 3px 3px 30px black;
+}
+
+.bike{
+    display: flex;
+    justify-content: space-between;
+    justify-content: space-around;
+}
+
+.rightbox{
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s 0s linear ;
+    box-shadow: 1px 1px 10px black;
+    border-radius: 20px;
+}
+
+.rightbox img{
+    width:300px;
+    height: 300px;
+    border-radius: 20px;
+    transition: all 0.6s 0s linear 0s;
+
+}
+
+.rightbox:hover{
+    transform: scale(1.2);
+}
+
+.leftbox h2{
+    font-size: 2rem;
+}
+
+.specificbox{
+    font-size: 1.25rem;
+}
+
+.pricebox{
+    font-size: 1.1rem;
+}
+
+.rightbox .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #e0c3fc4a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    opacity: 0;
+}
+
+.rightbox .overlay:hover{
+    opacity: 1;
+}
+
+.rightbox .overlay span{
+    color: white;
+    font-size: 1.2;
+}
